@@ -18,6 +18,9 @@ function initAutocomplete(){
         autocomplete2.addListener('place_changed',onPlaceChanged2);
 }
 
+var latitude1;
+var longitude1;
+
 function onPlaceChanged1(){
     var place1 = autocomplete1.getPlace();
     if(!place1.geometry){
@@ -25,12 +28,15 @@ function onPlaceChanged1(){
     }
     else{
         // document.getElementById('details').innerHTML = place1.name;
-        var latitude1 = place1.geometry.location.lat();
-        var longitude1= place1.geometry.location.lng(); 
+        latitude1 = place1.geometry.location.lat();
+        longitude1= place1.geometry.location.lng(); 
         // console.log(latitude1);
         // console.log(longitude1);
     }
 }
+
+var latitude2;
+var longitude2;
 
 function onPlaceChanged2(){
     var place2 = autocomplete2.getPlace();
@@ -39,8 +45,8 @@ function onPlaceChanged2(){
     }
     else{
         // document.getElementById('details').innerHTML = place2.name;
-        var latitude2 = place1.geometry.location.lat();
-        var longitude2= place1.geometry.location.lng(); 
+        latitude2 = place1.geometry.location.lat();
+        longitude2= place1.geometry.location.lng(); 
     }
 }
 

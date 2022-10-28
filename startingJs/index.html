@@ -12,6 +12,13 @@
     <div>To: </div>
     <input id="autocomplete2" placeholder="Enter a place" type="text" />
     <!-- Time & Date are to be included here -->
+
+    <div>
+        <input id="address" type="textbox" value="Sydney, NSW">
+        <input type="button" value="Geocode" onclick="codeAddress()">
+      </div>
+      <div id="map_canvas" style="height:90%;top:30px"></div>
+      
 </body>
 <script src="engine.js"> </script>
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClVOawt8YQyeNBoMP3rBhpFPiJIYJBDTw&libraries=places&callback=initAutocomplete"> </script>
