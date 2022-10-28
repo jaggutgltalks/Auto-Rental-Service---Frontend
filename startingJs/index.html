@@ -11,15 +11,11 @@
     <input id="autocomplete1" placeholder="Enter a place" type="text" />
     <div>To: </div>
     <input id="autocomplete2" placeholder="Enter a place" type="text" />
-
-    <div class="form-group">
-        <label for="time" class="col-xs-2 control label"><i class="fa-solid fa-truck-clock"></i></label>
-        <div class="col-xs-4">
-        <input type="text" id="time" placeholder="Time" class="form-control">
-        
+    <!-- Action button -->
+    <div>
+    <button onclick="runThis()"> Get Directions </button>
     </div>
-    </div>
-    <!-- Time & Date are to be included here -->
+    <!-- Time & Date are to be included here later -->
 </body>
 <script src="engine.js"> </script>
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClVOawt8YQyeNBoMP3rBhpFPiJIYJBDTw&libraries=places&callback=initAutocomplete"> </script>
