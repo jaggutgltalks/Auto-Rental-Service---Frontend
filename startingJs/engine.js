@@ -1,4 +1,7 @@
 let autocomplete;
+function runThis(){
+    console.log("Jai hO");
+}
 function initAutocomplete(){
     autocomplete1 = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete1'),
