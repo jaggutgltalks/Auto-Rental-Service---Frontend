@@ -1,0 +1,29 @@
+Frontend Functionality Discussion:---->>>
+
+    First Page to an unknown user:
+        (Auto Recommendation is always ON)
+
+        1. FROM :-> entry is done -->> Map is loaded with the searched place in centre.
+        2. TO :-> Nothing is done.
+        3. Final button Clicked :->> Map is loaded with two markers i.e. from & to.
+
+        (Backend Specific)
+        1. It takes the tentative Date & time and based on those 2, returns the final cost.
+
+    Missing functionality:--->
+
+        Understand about what is API. (endpoint)
+        1. Actual Route is not loaded. (Google Map API related stuff) 
+
+
+FrontEnd Design Discussion:----->>>
+    First Page: (page-1)
+
+        1. Date & time input box.
+        2. Register & Login button.
+        3. Change GeoCode name to "Book Ride".
+        4. Map alignment.
+        5. Add Header & Footer.
+        6. Add a good animated Background.
+
+        
