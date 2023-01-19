@@ -1,20 +1,19 @@
-let autocomplete;
-function runThis(){
-    console.log("Jai hO");
-}
+let autocomplete1;
+let autocomplete2;
+
 function initAutocomplete(){
     autocomplete1 = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete1'),
         {
             types : ['establishment'],
-            componentRestrictions : {'state' : ['Uttar Pradesh']},
+            // componentRestrictions : {'state' : ['Uttar Pradesh']},
             fields : ['geometry']
         });
     autocomplete2 = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete2'),
         {
             types : ['establishment'],
-            componentRestrictions : {'state' : ['Uttar Pradesh']},
+            // componentRestrictions : {'state' : ['Uttar Pradesh']},
             fields : ['geometry']
         });
         autocomplete1.addListener('place_changed',onPlaceChanged1);
@@ -48,8 +47,8 @@ function onPlaceChanged2(){
     }
     else{
         // document.getElementById('details').innerHTML = place2.name;
-        latitude2 = place1.geometry.location.lat();
-        longitude2= place1.geometry.location.lng(); 
+        latitude2 = place2.geometry.location.lat();
+        longitude2= place2.geometry.location.lng(); 
     }
 }
 

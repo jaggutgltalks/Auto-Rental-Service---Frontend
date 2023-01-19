@@ -129,7 +129,7 @@ var cost;
 // functionality
  async function calcRoute() {
         // create Request
-        var myDate = new Date("2022-12-30T11:00:00+0000");
+        var myDate = new Date("2023-12-30T11:00:00+0000");
         var fiDate = Date.parse(myDate);
         console.log(fiDate);
         var request = {
