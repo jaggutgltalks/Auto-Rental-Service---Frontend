@@ -26,4 +26,17 @@ FrontEnd Design Discussion:----->>>
         5. Add Header & Footer.
         6. Add a good animated Background.
 
-        
+TO-DO's: 24/01/2023
+    On JavaScript Side:
+
+        1. first location marker should come as soon as the location is selected from the drop down in "From" input box.
+            --> need to refactor code() method for this change to take place.
+            (Second location marker is in place.)
+
+        ------DONE-------->>
+        2. loading the actual path between two locations as soon as the second marker is placed.
+         
+    28/01/2023-Jaggu
+        1. Date and time validation
+        2. Map Screen pop-up for confirming location.
+        3. Align the input boxes:--- from, to & date .

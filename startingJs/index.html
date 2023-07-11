@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,116 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script src="test.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClVOawt8YQyeNBoMP3rBhpFPiJIYJBDTw&libraries=places&callback=initAutocomplete" defer> </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClVOawt8YQyeNBoMP3rBhpFPiJIYJBDTw&libraries=places&callback=initAutocomplete"
+        defer> </script>
 </head>
 
 <body>
-    <div>From: </div>
-    <input id="autocomplete1" placeholder="Enter a place" type="text" />
-    <div>To: </div>
-    <input id="autocomplete2" placeholder="Enter a place" type="text" /> 
-    <div> 
-        <input type="button" value="Geocode" onclick="code()">
-      </div>
-      <div id="map"></div>
-    <!-- Time & Date are to be included here later -->
+  
+    <nav class="nav">
+        <ul>
+            <li class="shimg"><img src="new soonya white.png">Ridoo</li>
+            <div id="logg">
+            <button class="btn" type="submit">Register</button>
+            <button class="btn" type="submit">Log in</button>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="mid" >
+        <div class="midhead">
+       <h1 id="midheadd">Book Your Ride Now...</h1> 
+        </div>
+    </div>
+
+   
+    <div class="containerr">
+        <div class="formm">
+            <label  class="iconn" for="autocomplete1"><i class="fa-regular fa-circle-dot"></i></label>
+            <input class="midform" id="autocomplete1" placeholder="Enter start location" type="text" />
+        </div>
+        <div class="formm">
+            <label class="iconn" for="autocomplete2"><i class="fa-solid fa-location-dot"></i></label>
+            <input class="midform" id="autocomplete2" placeholder="Enter destination" type="text" />
+        </div class="formm">
+        <!-- Time & Date are to be included here later -->
+        <div id="time">
+          <span>
+            <label class="datetime" for="birthday">Date:</label>
+            <input class="datetime" type="date" id="birthday" name="birthday">
+          </span>
+        
+          <span>
+            <label class="datetime" for="timing">Time:</label>
+            <input class="datetime" type="time" id="timing" name="timing">
+          </span>
+          </div>
+          
+            <input class="ridebtn" type="button" value="Book Ride" onclick="code()">
+
+          <div id="mapcontainer">
+          <div id = "mapClass" class="hidden">
+            <div id="map"></div>
+            <a style="position: relative;" href="http://127.0.0.1:5502/index.html">
+            <button id="mapbtn" onclick="calcRoute()">Confirm location</button>
+          </a>
+          </div>
+          </div>
+
+        </div>
+        
+        
+    </div>
+
+    <!-- footer -->
+    
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify"> Booking Ridoo App <i><b>Let's Begin...<b><i> </p>
+            </div>
+  
+           
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Contribute</li>
+                <li>Privacy Policy</li>
+                <li>Sitemap</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+           <a href="#">Jaggu</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/abb6fc791f.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
